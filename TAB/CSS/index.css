@@ -1,0 +1,25 @@
+
+*{ margin: 0;
+    padding:0;
+    list-style:none;
+}
+div {
+    width: 306px;
+    height: 300px;
+    overflow: hidden;
+}
+li{ width: 100px;
+    line-height: 60px;
+    background:cadetblue;
+    text-align: center ;
+    border: 1px solid chartreuse;
+    float: left;
+}
+p{
+    height: 300px;
+    display: block;
+    background-color:cadetblue ;
+}
+.active{
+    background:cornsilk;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title></title>
+	<link rel='stylesheet' href='CSS/index.css'>
+</head>
+<body>
+<div class="content" ng-app="app1" ng-controller="controllerApp1" >
+	<div class="content-box"  ng-repeat="listLi in list">
+		<p class="title"  ng-bind="listLi.title" ng-click="show($index)"></p>
+		<div ng-show="$index==active"   >
+			<p class="title-content" ng-repeat="divList in listLi.content" ng-bind="divList" ></p>
+		</div>
+	</div>
+</div>
+<script src="JS/angular.js"></script>
+<script src="JS/index.js"></script>
+</body>
+</html>
+
