@@ -1,10 +1,16 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}"  wx:key="logs" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
-  <block>
-    <button bindtap="bindViewTap">下一步</button>
-  </block>
+<view class="container ">
+  <view class='log-bg'>
+    <view class='log-content'>
+      <ul class='log-ul' wx:for="{{logs}}" wx:key="logs" wx:for-index="idx" wx:for-item="log">
+        <li>
+          <text class="log-title">{{log.name}}</text>
+        </li>
+        <p bindtap="buttonNext" data-it="{{idx+'-'+index}}" class="log-p" wx:for="{{log.data}}" wx:key="log" wx:for-item="it">
+          <icon type="success_no_circle" size="20" wx:if="{{it.open}}" />{{index + 1}}. {{it.name}}</p>
+      </ul>
+      <button size='50' class='log-next' bindtap="bindViewTap" >下一步</button>
+    </view>
+  </view>
 
 </view>

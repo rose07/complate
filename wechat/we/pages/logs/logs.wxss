@@ -1,8 +1,66 @@
-.log-list {
+/* .log-list {
   display: flex;
   flex-direction: column;
   padding: 40rpx;
 }
 .log-item {
   margin: 10rpx;
+} */
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.log-bg {
+  width: 750rpx;
+  height: 100%;
+  background: pink url("http://img.hb.aicdn.com/b1b9d1352366f937385988648d37ab4d98336a2d24b6e-naoGVK_fw658") no-repeat;
+  background-size: 100%;
+}
+
+.log-content {
+  margin: 250rpx auto 100rpx;
+  width: 75%;
+  height: 60%;
+  color: yellow;
+  text-align: left;
+}
+
+.log-ul {
+  width: 100%;
+  margin-left: 30rpx;
+}
+
+.log-title {
+  color: black;
+  font-size: 50rpx;
+}
+
+ul li {
+  width: 100%;
+  padding: 10rpx;
+  float: left;
+  display: block;
+}
+
+.log-next {
+  width: 34%;
+  height: 11%;
+  font-size: 35rpx;
+}
+
+.log-p {
+  white-space: normal;
+  width: 100%;
+  display: block;
 }
